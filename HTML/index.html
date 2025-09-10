@@ -1,0 +1,126 @@
+<!-- 
+ File: index.html
+ GUI Assignment: Creating first web page
+ Christopher Huerta
+ 9/08/25
+ In the index webpage it allows the user to filter through a preset gallery of pictures ive taken
+ with the filter enabled the web page updates and hides images that dont fit the filter. You are also
+ able to click on the images which will then redirect the user to a new page which will display a genre
+ in which the images fall under as well with a brief description about the photos. 
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Photography</title>
+        <link rel="stylesheet" href="/HW1_ChristopherHuerta/CSS/style.css">
+    </head>
+    <body>
+        <h1 class="centered-title">Photography in different subjects</h1>
+            <p>With in this site you will be shown some images i have taken myself all of which are pretty 
+            different with the table below you will be able to filter between a couple of different subjects to 
+            immediatly find images with in a certain subject as well as being able to click on the title or 
+            genre or an image you see which will launch you to a page that explains a bit about each photo</p>
+
+        <!-- this section below is setting up my fieldset table to allow a person 
+         to choose filters so they can only see specific images -->
+        <h2 class="centered-title">Filterable Gallery</h2>
+        <fieldset class="filters" aria-label="Image filters">
+            <label><input type="checkbox" name="tag" value="cat"> Cat</label>
+            <label><input type="checkbox" name="tag" value="nature"> Nature</label>
+            <label><input type="checkbox" name="tag" value="city"> City</label>
+            <label><input type="checkbox" name="tag" value="portrait"> Portrait</label>
+        </fieldset>
+
+        <!-- here i set up a grid to be able to dynamically update the webpage based on the user filters.
+         each image is put within an article so that i can add tags to the images based off what they fall under -->
+        <div class="grid" id="gallery">
+           <a href="nature.html" class="card-link" aria-label="See all nature photos">
+            <figure class="card" data-tags="nature">
+                <img src="/HW1_ChristopherHuerta/Images/pinecones_on_tree.jpg" alt = "pinecones on a tree">
+            </figure>
+           </a> 
+
+           <a href="cat.html" class="card-link" aria-label="See all cat photos"> 
+            <figure class="card" data-tags="cat,portrait">
+                <img src="/HW1_ChristopherHuerta/Images/Cat_Laying_down.jpg" alt = "cat laying down">
+            </figure>
+           </a> 
+            
+           <a href="cat.html" class="card-link" aria-label="See all cat photos">
+            <figure class="card" data-tags="cat,portrait">
+                <img src="/HW1_ChristopherHuerta/Images/cat_loaf.jpg" alt = "cat as a loaf">
+            </figure>
+           </a> 
+
+           <a href="cat.html" class="card-link" aria-label="See all cat photos">
+            <figure class="card" data-tags="cat,portrait">
+                <img src="/HW1_ChristopherHuerta/Images/Cat_Windowsill.jpg" alt = "Mischevious cat">
+            </figure>
+           </a>
+
+           <a href="city.html" class="card-link" aria-label="See all city photos">        
+            <figure class="card" data-tags="city">
+                <img src="/HW1_ChristopherHuerta/Images/Fox_Hall_Snow.jpg" alt = "Fox Hall on a snowy night">
+            </figure>        
+           </a>
+
+           <a href="city.html" class="card-link" aria-label="See all city photos">
+            <figure class="card" data-tags="city">
+                <img src="/HW1_ChristopherHuerta/Images/Industrial_Building.jpg" alt = "building scenery">
+            </figure>
+           </a> 
+
+           <a href="nature.html" class="card-link" aria-label="See all nature photos">
+            <figure class="card" data-tags="nature">
+                <img src="/HW1_ChristopherHuerta/Images/lake.jpg" alt = "picture of lake">
+            </figure>
+           </a> 
+
+           <a href="city.html" class="card-link" aria-label="See all city photos">
+            <figure class="card" data-tags="city">
+                <img src="/HW1_ChristopherHuerta/Images/Moon_at_sunset.jpg" alt = "moon coming up during a sunset">
+            </figure>
+           </a>  
+
+           <a href="city.html" class="card-link" aria-label="See all city photos">            
+            <figure class="card" data-tags="city">
+                <img src="/HW1_ChristopherHuerta/Images/Rainy_day.jpg" alt = "rainy evening">
+            </figure>
+           </a> 
+
+           <a href="city.html" class="card-link" aria-label="See all city photos">
+            <figure class="card" data-tags="city, nature">
+                <img src="/HW1_ChristopherHuerta/Images/River.jpg" alt = "river behind RHV">
+            </figure>
+           </a>
+
+           <a href="nature.html" class="card-link" aria-label="See all nature photos">
+            <figure class="card" data-tags="nature">
+                <img src="/HW1_ChristopherHuerta/Images/Snowy_tree.jpg" alt = "tree in the snow">
+            </figure>
+           </a> 
+
+           <a href="nature.html" class="card-link" aria-label="See all nature photos">
+            <figure class="card" data-tags="nature, portrait">
+                <img src="/HW1_ChristopherHuerta/Images/tree_man.jpg" alt = "tree man seen on hike">
+            </figure>
+           </a> 
+
+        </div>
+
+        <script src="/HW1_ChristopherHuerta/JavaScript/script.js"></script>
+
+    </body>
+
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+     
+
+</html>

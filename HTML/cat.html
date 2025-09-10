@@ -1,0 +1,62 @@
+<!-- 
+ File: cat.html
+ GUI Assignment: Creating first web page
+ Christopher Huerta
+ 9/08/25
+this webpage provides a gallery of cat photos ive taken and it also includes description
+under the photos that explain a bit about them. there is also a highlighted text in the top left corner that allows
+you to return to the main page
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cat Gallery</title>
+        <link rel="stylesheet" href="/HW1_ChristopherHuerta/CSS/style.css">
+    </head>
+    <body>
+       <header class="page-header"> 
+        <h1 class="centered-title">Gallery Of Cat Photos</h1>
+        <p class="sub">A few cat photos of my friends cat Boozi and Pancha</p>
+        <!-- i added text here that when clicked brings you back to main gallery page -->
+        <p><a class="back-link" href="index.html"> &larr;back to main gallery</a></p>
+       </header>
+       
+       <!-- create the grid section for images in CATegory -->
+       <div class="grid">
+            <!-- here i set up each image so that it is within a card similar to main page but with a brief description -->
+            <figure class="card card--detail">
+                <img src="/HW1_ChristopherHuerta/Images/Cat_Laying_down.jpg" alt="Boozi laying down">
+                <figcaption>
+                    <h3>Boozi</h3>
+                    <p>This is a picture of Boozi laying down in the living room while me and my friends 
+                        play magic the gathering.This picture was taken moments before Boozie jumped on the table</p>
+                </figcaption>
+            </figure>
+
+            <figure class="card card--detail">
+                <img src="/HW1_ChristopherHuerta/Images/Cat_Windowsill.jpg" alt="Boozi laying down">
+                <figcaption>
+                    <h3>Boozi</h3>
+                    <p>Here we see Boozi in his natural habit as he stares at me and my friends while we play beer pong on the roof deck.
+                        if you can see there is a hole in the screen where he has attempted to escape from before.
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure class="card card--detail">
+                <img src="/HW1_ChristopherHuerta/Images/cat_loaf.jpg" alt="Boozi laying down">
+                <figcaption>
+                    <h3>Pancha</h3>
+                    <p>Here is Pancha my uncles house cat that always manages to escape from his house.
+                         I took this picutre in the morning when i was picking up something from his house as she just waits to be let in.</p>
+                </figcaption>
+            </figure>
+
+
+       </div>
+
+    </body>
+
+</html>

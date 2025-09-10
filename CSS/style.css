@@ -1,0 +1,105 @@
+/*
+ File: style.css
+ GUI Assignment: Creating first web page
+ Christopher Huerta
+ 9/08/25
+this file contains all the stylings for my html code such as the main pages body and the cards in which my images are held in 
+this also contains some of the set up for my filter checkboxes and some small card modifications for the floating cards when hovering
+over them
+*/
+
+/* this sets up the base page */
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+/* centers all elements */
+.centered-title {
+    text-align: center;
+}
+
+
+.centered-text {
+    text-align: center;
+}
+
+/* style and aligns the checkbox filter */
+.filters{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+/* this sets up the grid for the imgae cards in 3 columns */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+/* this is what enables the clickable effects on my cards while mainting the layout */
+.card-link {
+    display: contents;
+    text-decoration: none;
+    color: inherit;
+}
+/* this is what adds the floating effect when mouse is over a card */
+.card-link .card { transition: transform .15s ease, box-shadow .15s ease;}
+.card-link:hover .card,
+.card-link:focus .card {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,.12);
+}
+
+/* this is what allows for the caption in the images when redirected to the new browser */
+.card--detail figcaption {
+    padding: .75rem .9rem 1rem;
+}
+
+/* this adds the heading to the captions in the images */
+.card--detail h3 {
+    margin: 0 0 .35rem;
+    font-size: 1.05rem;
+}
+
+/* this is the paragraph in the image caption */
+.card--detail p {
+    margin: 0;
+    color: #444;
+    line-height: 1.35;
+}
+
+/* styling for the image card on the main page */
+.card {
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* this is the styling for the actual image that goes into each card */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* used to hide elements when updating the cards */
+.hidden {
+    display: none;
+}
+
+/* this is just to center text on sub headings */
+.sub {
+    text-align: center;
+}

@@ -1,0 +1,72 @@
+<!-- 
+ File: nature.html
+ GUI Assignment: Creating first web page
+ Christopher Huerta
+ 9/08/25
+this webpage provides a gallery of nature photos. A majority of these photos where taken while on a hike and some
+when i was visiting a friend. Similar to the other two pages this gallery is about nature. each image has
+a brief description and title. again in the top left you can return to the main gallery from this page. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Nature Gallery</title>
+        <link rel="stylesheet" href="/HW1_ChristopherHuerta/CSS/style.css">
+    </head>
+    <body>
+        <h1 class="centered-title">Gallery Of Nature Photos</h1>
+        <p class="sub">A few photos I took while out in nature</p>
+        <!-- i added text here that when clicked brings you back to main gallery page -->
+        <p><a class="back-link" href="index.html"> &larr;back to main gallery</a></p>
+       
+       <!-- create the grid section for images in nature category -->
+       <section class="grid">
+            <!-- here i set up each image so that it is within a card similar to main page but with a brief description -->
+            <figure class="card card--detail">
+                <img src="/HW1_ChristopherHuerta/Images/pinecones_on_tree.jpg" alt="pinecones">
+                <figcaption>
+                    <h3>Pinecones</h3>
+                    <p>Back in 2024 me and my friends decided to go hike Mount Monadnock and when we 
+                        got near the top i saw these two little pinecones on the tree and thought they 
+                        looked nice especially given the background scenery</p>
+                </figcaption>
+            </figure>
+
+            <figure class="card card--detail">
+                <img src="/HW1_ChristopherHuerta/Images/lake.jpg" alt="lake">
+                <figcaption>
+                    <h3>Lake</h3>
+                    <p>This picture was taken before we started our hike on Mount Monadnock in the back 
+                        you can see the top of Monadnock. I really enjoy this picture as its very peacful 
+                        and really captures the vibe of the fall.
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure class="card card--detail">
+                <img src="/HW1_ChristopherHuerta/Images/Snowy_tree.jpg" alt="Snowy Tree">
+                <figcaption>
+                    <h3>Snowy tree</h3>
+                    <p> This picture was taken in Williamburg VA last December when i went to go see one 
+                        of my friends. While walking during the night during a snow storm i saw this light 
+                        post by a tree and thought it gave off a omonous vibe and so i decided to take a picture of the moment and was happy the image was able to caputre what i saw</p>
+                </figcaption>
+            </figure>
+
+            <figure class="card card--detail">
+                <img src="/HW1_ChristopherHuerta/Images/tree_man.jpg" alt="Tree person">
+                <figcaption>
+                    <h3>Tree person</h3>
+                    <p>On our hike of mount Monadnock half way through the hike we saw this tree person sculpture that 
+                        someone made and I thought it looked pretty cool especially becuase they found individual pieced 
+                        of wood that made it look like a little tree person</p>
+                </figcaption>
+            </figure>
+
+
+       </section>
+    </body>
+
+</html>

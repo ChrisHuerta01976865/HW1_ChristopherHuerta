@@ -1,0 +1,81 @@
+<!-- 
+ File: city.html
+ GUI Assignment: Creating first web page
+ Christopher Huerta
+ 9/08/25
+this webpage provides a gallery of city photos ive taken while in Lowell and Washington D.C. similarly to the cat gallery
+this is a gallery of images take in the city. each photo has a brief description as well as the webpage again has a back button
+which is the highlighted text in the left top corner which will return you to the main gallery.
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>City Gallery</title>
+        <link rel="stylesheet" href="/HW1_ChristopherHuerta/CSS/style.css">
+    </head>
+    <body>
+        <h1 class="centered-title">Gallery Of City Photos</h1>
+        <p class="sub">Here are a few pictures I took within Lowell and Washington D.C</p>
+        <!-- i added text here that when clicked brings you back to main gallery page -->
+        <p><a class="back-link" href="index.html"> &larr;back to main gallery</a></p>
+
+       
+       <!-- create the grid section for images in city category -->
+       <div class="grid">
+            <!-- here i set up each image so that it is within a card similar to main page but with a brief description -->
+            <figure class="card card--detail">
+                <img src="/HW1_ChristopherHuerta/Images/Fox_Hall_Snow.jpg" alt="Fox Hall">
+                <figcaption>
+                    <h3>Fox Hall in the snow</h3>
+                    <p>I took this picture last febuary when it snowed heavily in Lowell and i 
+                        thought the atmosphere made fox hall look pretty cool</p>
+                </figcaption>
+            </figure>
+
+            <figure class="card card--detail">
+                <img src="/HW1_ChristopherHuerta/Images/Industrial_Building.jpg" alt="Industrial_Building">
+                <figcaption>
+                    <h3>Industrial</h3>
+                    <p>I really like this photo as the color pop really well and the centering of the 
+                        building made this a very appealing photo to look at for me. this was taken behind 
+                        River Hawk Village and the building in the image is one of the apartments by the river walk.
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure class="card card--detail">
+                <img src="/HW1_ChristopherHuerta/Images/Moon_at_sunset.jpg" alt="Red Moon">
+                <figcaption>
+                    <h3>Red Moon</h3>
+                    <p> I took this picture back home in D.C. on my friends rooftop. When we hung out at this house in 
+                        particular we would get really nice sunsets and often times we could see the moon coming up, in
+                         this picture I was able to capture the Moons red color as it was coming up.</p>
+                </figcaption>
+            </figure>
+
+            <figure class="card card--detail">
+                <img src="/HW1_ChristopherHuerta/Images/Rainy_day.jpg" alt="Rainy">
+                <figcaption>
+                    <h3>Mysterious</h3>
+                    <p>I took this image last spring semester after it had rained for a couple days and noticed how much 
+                        fog there was in lowell and since i loved the Mysterious and omenous vibe it gave off i snapped a 
+                        picture and edited it a bit to make the fog more aperant</p>
+                </figcaption>
+            </figure>
+
+            <figure class="card card--detail">
+                <img src="/HW1_ChristopherHuerta/Images/River.jpg" alt="Greenery by Tsongas">
+                <figcaption>
+                    <h3>City Over Growth</h3>
+                    <p> i took this picture by the Tsongas center and i really liked how over grown the greenery was 
+                        and so i decided to snap a pic of it because it felt so out of place for it to be in a city.</p>
+                </figcaption>
+            </figure>
+
+       </div>
+    </body>
+
+</html>
